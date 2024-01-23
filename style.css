@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 :root {
     --branco-principal: #ffffff;
-    --cinza-secundario: #c0c0c0;
-    --botao-vermelho : #691100;
+    --cinza-secundario: #D99696;
+    --botao-vermelho : #320607;
     --cor-de-fundo: #00030c;
-    --fonte-principal: 'Inter';
-    --botao-azul-efeito: #904444;
+    --fonte-principal: 'Montserrat';
+    --botao-azul-efeito: #591117;
 }
 
 * {
@@ -12,25 +14,26 @@
     padding: 0;
 }
 
-.cabecalho {
-    background-color: var(--cor-de-fundo);
+.container {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("asset/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-cabecalho {
     color: var(--branco-principal);
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 24px;
     flex-direction: row; 
+    font-family: var(--fonte-principal);
 }
 
 .cabecalho-imagem { 
-    width: 50px;
-    height: 50px;
-}
-
-.cabecalho-texto {
-    display: flex; /* Utiliza flex para alinhar o texto ao lado da imagem */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    margin-left: 16px; /* Adiciona um espaçamento à esquerda para separar a imagem do texto */
+    width: 120px;
+    height: 100px;
 }
 
 .cabecalho-menu {
@@ -44,39 +47,30 @@
     font-size: 18px;
 }
 
-.principal {
-    background: 
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("asset/principal.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* Ajuste a altura conforme necessário */
-    width: 100%; /* Ou ajuste a largura conforme necessário */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
 
-}
-
-.container {
+.container-caixa {
     display: grid;
-    grid-template-columns: 50% 50%;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    text-align: center; 
+    margin: 60px auto; 
+    max-width: 50%; 
+   
 }
 
-.container_botao {
-    background-color: var(--cor-de-fundo);
+h3 {
+    font-weight: 300;
+}
+
+.container-botao {
+    display: inline-block; /* Permite que o botão tenha largura baseada no conteúdo */
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
     color: var(--branco-principal);
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
     padding: 1em;
-    display: block;
-    margin-bottom: 1em;
+    margin: 20px auto;
 }
 
-.container_caixa {
-    margin: 0 6em;
-}
