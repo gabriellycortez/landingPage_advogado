@@ -2,7 +2,7 @@
 
 :root {
     --branco-principal: #ffffff;
-    --cinza-secundario: #D99696;
+    --cinza-secundario: #858585;
     --botao-vermelho : #320607;
     --cor-de-fundo: #00030c;
     --cor-de-fundo-secundaria: #120d02;
@@ -103,7 +103,7 @@ h3 {
 }
 
 .container-objetivos {
-    background-color: #8C6D46;
+    background-color: #443523;
     height:50vh;
     color: var(--branco-principal);
     display: flex;
@@ -123,3 +123,43 @@ h3 {
     margin-bottom: 10px;
 }
 
+.rodape {
+    background-color: var(--cor-de-fundo-secundaria);
+    color: var(--cinza-secundario);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a linha seguinte se não houver espaço suficiente */
+    justify-content: space-between; /* Distribui os itens uniformemente na linha */
+    padding: 50px 100px 20px 100px;
+}
+.rodape-info {
+    display: flex;
+    gap: 32px;
+    flex-grow: 1; /* Permite que a seção se expanda para ocupar todo o espaço disponível */
+}
+
+.rodape-titulo {
+    font-weight: 700;
+}
+
+.rodape-contatos,
+.rodape-horarios,
+.rodape-redes {
+    flex-grow: 1; /* Cada seção pode crescer para ocupar o espaço disponível */
+    font-size: 14px;
+}
+.rodape-redes {
+    display: flex;
+    flex-direction: column;
+}
+.rodape-redes-item {
+    text-decoration: none;
+    color: var(--cinza-secundario);
+}
+
+.info-importante {
+    color: var(--cinza-secundario);
+    text-align: center;
+    flex-basis: 100%; /* Define a largura como 100%, para que ocupe toda a largura disponível */
+    margin-top: 30px; /* Ajuste conforme necessário para o espaçamento desejado entre as seções e a info-importante */
+}
